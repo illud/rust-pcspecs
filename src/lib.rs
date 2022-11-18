@@ -1,16 +1,16 @@
 use std::env;
 use std::process::Command;
-use sysinfo::{NetworkExt, NetworksExt, ProcessExt, System, SystemExt};
+use sysinfo::{System, SystemExt};
 
 #[derive(Debug)]
 pub struct Sysinfo {
-    hostname: String,
-    platform: String,
-    os_number: String,
-    cpu: String,
-    gpu: String,
-    ram: u64,
-    mainboard: String,
+    pub hostname: String,
+    pub platform: String,
+    pub os_number: String,
+    pub cpu: String,
+    pub gpu: String,
+    pub ram: u64,
+    pub mainboard: String,
 }
 
 pub fn specs() -> Sysinfo {

@@ -21,7 +21,7 @@ PcSpecs is a crate to gather the system specs.
 Install the dependencies.
 
 ```sh
-pcspecs = "0.1.0"
+pcspecs = "0.1.1"
 ```
 
 ## How to use
@@ -57,7 +57,7 @@ Or
 ```rust
 
 fn main(){
-    println!("{:#?}", specs().GPU);
+    println!("{:#?}", specs().gpu);
     /* Output
     NVIDIA GeForce RTX 2060 SUPER
     */

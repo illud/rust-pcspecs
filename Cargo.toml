@@ -1,0 +1,26 @@
+[package]
+name = "pcspecs"
+version = "0.1.0"
+edition = "2021"
+include = [
+    "src/**/*",
+    "Cargo.toml",
+    "README.md",
+]
+keywords = [
+    "pcspecs"
+]
+licence = "MIT"
+license-file = "LICENSE"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+os_info = "3"
+sysinfo = "0.26.7"
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 1

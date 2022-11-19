@@ -20,7 +20,7 @@ PcSpecs is a crate to gather the system specs.
 Install the dependencies.
 
 ```sh
-pcspecs = "0.2.0"
+pcspecs = "0.2.1"
 ```
 
 ## How to use

@@ -9,7 +9,7 @@ pub struct Sysinfo {
     pub os_number: String,
     pub cpu: String,
     pub gpu: String,
-    pub ram: u64,
+    pub ram: String,
     pub mainboard: String,
 }
 
@@ -46,9 +46,8 @@ pub fn specs() -> Sysinfo {
     let mut sys = System::new_all();
     sys.refresh_all();
 
-    // We display all disks' information:
+    let ram: u64 = sys.total_memory() / 1024 / 1024;
 
-    println!("{:?}", sys.disks()[0]);
     let specs = Sysinfo {
         hostname: String::from(remove_characters(
             hostname.trim().replace("Name             ", ""),
@@ -62,7 +61,7 @@ pub fn specs() -> Sysinfo {
         gpu: String::from(remove_characters(
             gpu.trim().replace("Name                           ", ""),
         )),
-        ram: sys.total_memory() / 1024 / 1024,
+        ram: ram.to_string()[0..2].to_string() + " GB",
         mainboard: String::from(remove_characters(
             mainboard
                 .trim()

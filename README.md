@@ -1,4 +1,4 @@
-# PcSpecs
+# PcSpecs (WINDOWS ONLY)
 
 ## Get system info
 
@@ -13,7 +13,6 @@ PcSpecs is a crate to gather the system specs.
 - CPU
 - GPU
 - RAM
-- Disk
 - MAINBOARD
 
 ## Installation
@@ -46,8 +45,7 @@ fn main(){
     Pro 10 
     Intel(R) Core(TM) i7-10700K CPU @ 3.80GHz
     NVIDIA GeForce RTX 2060 SUPER
-    24 
-    134
+    24 GB
     TUF GAMING B460M-PLUS (WI-FI*/
 }
 ```

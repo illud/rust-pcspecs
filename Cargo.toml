@@ -3,8 +3,8 @@ name = "pcspecs"
 version = "0.2.1"
 edition = "2021"
 description = "Simple api to get pc specs"
-homepage = "https://github.com/saturnavt/rust-pcspecs"
-repository = "https://github.com/saturnavt/rust-pcspecs"
+homepage = "https://github.com/illud/rust-pcspecs"
+repository = "https://github.com/illud/rust-pcspecs"
 include = [
     "src/**/*",
     "Cargo.toml",
